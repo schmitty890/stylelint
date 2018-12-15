@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stylelint Test</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- built out css styleguide-styles - these are for the styleguide itself, not the main styles you want for your site -->
+  <link rel="stylesheet" href="/build/css/styleguide-styles.min.css" type="text/css">
+  <!-- built out css prototype css styles - these are your CORE styles for your site -->
+  <link rel="stylesheet" href="/build/css/styles.min.css" type="text/css">
+</head>
+<body class="">
+
+    <div class="l-page-layout l-page-layout--two-column-fixed">
+
+      <!--c-header-->
+      <div class="l-page-layout__secondary">
+        <header class="c-header c-header--vertical" role="banner">
+          <div class="c-header__inner">
+            <h3 class="c-logo">
+              <a href="/" class="c-logo__link" rel="home">
+              Style Guide Prototype
+              <!--end .c-header__logo-->
+              </a><!--end c-logo__link-->
+            </h3>
+            <!--end c-logo-->
+            <button class="c-btn c-btn--small c-header__nav-btn js-nav-trigger" aria-expanded="false">Menu</button>
+            <div class="c-header__nav-container js-nav-panel">
+              <nav class="c-primary-nav" role="navigation">
+                <ul class="c-primary-nav__list c-primary-nav__list--flush js-nav-panel" role="tablist" aria-multiselectable="true">
+                  <li class="c-primary-nav__item">
+                    <a href="/getting-started" class="c-primary-nav__link ">
+                    <span class="c-primary-nav__text">Getting started</span>
+                    </a>
+                  </li>
+                  <!-- end c-nav__list__item -->
+                  <li class="c-primary-nav__item ">
+                    <a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/style-guide-guide/guidelines/" role="button" tabindex="0" aria-expanded="false">
+                      <span class="c-primary-nav__text">Guidelines</span>
+                      <div class="c-icon c-primary-nav__icon">
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                    <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/guidelines/overview">
+                        <span class="c-primary-nav__text">Overview</span>
+                        </a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/guidelines/design-principles">Design Principles</a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/guidelines/code-conventions">Code conventions</a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/guidelines/accessibility">Accessibility</a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/guidelines/data-display">Data display</a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/guidelines/data-entry">Data entry</a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/guidelines/data-validation">Data validation</a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/guidelines/input-modes">Input modes</a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/guidelines/navigation">Navigation</a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/guidelines/notifications">Notifications</a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/guidelines/writing">Writing</a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/guidelines/browser-support">Browser support</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="c-primary-nav__item ">
+                    <a href="/style-guide-guide/styles/index.html" class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " role="button" tabindex="0" aria-expanded="false">
+                      <span class="c-primary-nav__span">Styles</span>
+                      <div class="c-icon c-primary-nav__icon">
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                    <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/styles/overview">
+                        <span class="c-primary-nav__text">Overview</span>
+                        </a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/styles/design-tokens">Design tokens</a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/styles/color">Color</a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/styles/typography">Typography</a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/styles/iconography">Iconography</a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/styles/imagery">Imagery</a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/styles/motion">Motion</a>
+                      </li>
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/styles/voice-and-tone">Voice and tone</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- end c-nav__list__item -->
+                  <li class="c-primary-nav__item ">
+                    <a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/style-guide-guide/components/" role="button" tabindex="0" aria-expanded="false">
+                      <span class="c-primary-nav__text">Components</span>
+                      <div class="c-icon c-primary-nav__icon">
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                    <!--end c-primary-nav__link-->
+                    <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                      <li class="c-primary-nav__subitem ">
+                        <a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#" role="button" tabindex="0" aria-expanded="false">
+                          <span class="c-primary-nav__text">Blocks and cards</span>
+                          <div class="c-icon c-primary-nav__subicon">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </div>
+                        </a>
+                        <!--end c-primary-nav__link-->
+                        <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/components/blocks-and-cards/overview">Overview
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/components/blocks-and-cards/card">Card
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/components/blocks-and-cards/hero">Hero
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/components/blocks-and-cards/tile">Tile
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                        </ul>
+                        <!-- end c-primary-nav__sublist-->
+                      </li>
+                      <!-- end c-primary-nav__item-->
+                      <li class="c-primary-nav__subitem ">
+                        <a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#" role="button" tabindex="0" aria-expanded="false">
+                          <span class="c-primary-nav__text">Buttons</span>
+                          <div class="c-icon c-primary-nav__subicon">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </div>
+                        </a>
+                        <!--end c-primary-nav__link-->
+                        <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/buttons/">Overview
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/buttons/button-group.html">Button group
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/buttons/button.html">Button
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/buttons/text-button.html">Text button
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                        </ul>
+                        <!-- end c-primary-nav__sublist-->
+                      </li>
+                      <!-- end c-primary-nav__item-->
+                      <li class="c-primary-nav__subitem ">
+                        <a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#" role="button" tabindex="0" aria-expanded="false">
+                          <span class="c-primary-nav__text">Charts and graphs</span>
+                          <div class="c-icon c-primary-nav__subicon">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </div>
+                        </a>
+                        <!--end c-primary-nav__link-->
+                        <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/charts-and-graphs/">Overview
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/charts-and-graphs/bar-graph.html">Bar graph
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                        </ul>
+                        <!-- end c-primary-nav__sublist-->
+                      </li>
+                      <!-- end c-primary-nav__item-->
+                      <li class="c-primary-nav__subitem ">
+                        <a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#" role="button" tabindex="0" aria-expanded="false">
+                          <span class="c-primary-nav__text">Form controls</span>
+                          <div class="c-icon c-primary-nav__subicon">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </div>
+                        </a>
+                        <!--end c-primary-nav__link-->
+                        <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/form-controls/">Overview
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/form-controls/text-field.html">Text field
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                        </ul>
+                        <!-- end c-primary-nav__sublist-->
+                      </li>
+                      <!-- end c-primary-nav__item-->
+                      <li class="c-primary-nav__subitem ">
+                        <a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#" role="button" tabindex="0" aria-expanded="false">
+                          <span class="c-primary-nav__text">Headers and footers</span>
+                          <div class="c-icon c-primary-nav__subicon">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </div>
+                        </a>
+                        <!--end c-primary-nav__link-->
+                        <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/headers-and-footers/">Overview
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/headers-and-footers/footers.html">Footer
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/headers-and-footers/horizontal-header.html">Horizontal header
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/headers-and-footers/vertical-header.html">Vertical header
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                        </ul>
+                        <!-- end c-primary-nav__sublist-->
+                      </li>
+                      <!-- end c-primary-nav__item-->
+                      <li class="c-primary-nav__subitem ">
+                        <a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#" role="button" tabindex="0" aria-expanded="false">
+                          <span class="c-primary-nav__text">Icons</span>
+                          <div class="c-icon c-primary-nav__subicon">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </div>
+                        </a>
+                        <!--end c-primary-nav__link-->
+                        <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/icons/">Overview
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/icons/icons.html">Icons
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                        </ul>
+                        <!-- end c-primary-nav__sublist-->
+                      </li>
+                      <!-- end c-primary-nav__item-->
+                      <li class="c-primary-nav__subitem ">
+                        <a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#" role="button" tabindex="0" aria-expanded="false">
+                          <span class="c-primary-nav__text">Interactive panels</span>
+                          <div class="c-icon c-primary-nav__subicon">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </div>
+                        </a>
+                        <!--end c-primary-nav__link-->
+                        <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/interactive/">Overview
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/interactive/tabs.html">Tabs
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                        </ul>
+                        <!-- end c-primary-nav__sublist-->
+                      </li>
+                      <!-- end c-primary-nav__item-->
+                      <li class="c-primary-nav__subitem ">
+                        <a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#" role="button" tabindex="0" aria-expanded="false">
+                          <span class="c-primary-nav__text">Lists and collections</span>
+                          <div class="c-icon c-primary-nav__subicon">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </div>
+                        </a>
+                        <!--end c-primary-nav__link-->
+                        <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/lists-and-collections/">Overview
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/lists-and-collections/card-list.html">Card list
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/lists-and-collections/tile-list.html">Tile list
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                        </ul>
+                        <!-- end c-primary-nav__sublist-->
+                      </li>
+                      <!-- end c-primary-nav__item-->
+                      <li class="c-primary-nav__subitem ">
+                        <a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#" role="button" tabindex="0" aria-expanded="false">
+                          <span class="c-primary-nav__text">Media</span>
+                          <div class="c-icon c-primary-nav__subicon">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </div>
+                        </a>
+                        <!--end c-primary-nav__link-->
+                        <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/media/">Overview
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/media/video.html">Video
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                        </ul>
+                        <!-- end c-primary-nav__sublist-->
+                      </li>
+                      <!-- end c-primary-nav__item-->
+                      <li class="c-primary-nav__subitem ">
+                        <a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#" role="button" tabindex="0" aria-expanded="false">
+                          <span class="c-primary-nav__text">Messaging</span>
+                          <div class="c-icon c-primary-nav__subicon">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </div>
+                        </a>
+                        <!--end c-primary-nav__link-->
+                        <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/messaging/">Overview
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/messaging/alert.html">Alert
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/messaging/tooltip.html">Tooltip
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                        </ul>
+                        <!-- end c-primary-nav__sublist-->
+                      </li>
+                      <!-- end c-primary-nav__item-->
+                      <li class="c-primary-nav__subitem ">
+                        <a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#" role="button" tabindex="0" aria-expanded="false">
+                          <span class="c-primary-nav__text">Navigation</span>
+                          <div class="c-icon c-primary-nav__subicon">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </div>
+                        </a>
+                        <!--end c-primary-nav__link-->
+                        <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/navigation/">Overview
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/navigation/breadcrumbs.html">Breadcrumbs
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                        </ul>
+                        <!-- end c-primary-nav__sublist-->
+                      </li>
+                      <!-- end c-primary-nav__item-->
+                      <li class="c-primary-nav__subitem ">
+                        <a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#" role="button" tabindex="0" aria-expanded="false">
+                          <span class="c-primary-nav__text">Tables</span>
+                          <div class="c-icon c-primary-nav__subicon">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </div>
+                        </a>
+                        <!--end c-primary-nav__link-->
+                        <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/tables/">Overview
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/table/table.html">Table
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                        </ul>
+                        <!-- end c-primary-nav__sublist-->
+                      </li>
+                      <!-- end c-primary-nav__item-->
+                      <li class="c-primary-nav__subitem ">
+                        <a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#" role="button" tabindex="0" aria-expanded="false">
+                          <span class="c-primary-nav__text">Text</span>
+                          <div class="c-icon c-primary-nav__subicon">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </div>
+                        </a>
+                        <!--end c-primary-nav__link-->
+                        <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/text/">Overview
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/text/page-header.html">Page header
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/text/section-header.html">Section header
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                          <li class="c-primary-nav__subitem ">
+                            <a class="c-primary-nav__sublink " href="/style-guide-guide/components/text/text-passage.html">Text passage
+                            </a><!-- end c-primary-nav__link -->
+                          </li>
+                          <!-- end c-primary-nav__item -->
+                        </ul>
+                        <!-- end c-primary-nav__sublist-->
+                      </li>
+                      <!-- end c-primary-nav__item-->
+                    </ul>
+                  </li>
+                  <li class="c-primary-nav__item ">
+                    <a href="/style-guide-guide/utilities/index.html" class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " role="button" tabindex="0" aria-expanded="false">
+                      <span class="c-primary-nav__span">Utilities</span>
+                      <div class="c-icon c-primary-nav__icon">
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                    <ul class="c-primary-nav__sublist js-nav-dropdown ">
+                      <li class="c-primary-nav__item">
+                        <a class="c-primary-nav__link " href="/style-guide-guide/utilities/index.html">
+                        <span class="c-primary-nav__text">Overview</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- end c-nav__list__item -->
+                  <li class="c-primary-nav__item">
+                    <a href="/style-guide-guide/page-templates.html" class="c-primary-nav__link ">
+                    <span class="c-primary-nav__text">Page templates</span>
+                    </a>
+                  </li>
+                  <!-- end c-nav__list__item -->
+                  <li class="c-primary-nav__item">
+                    <a href="/style-guide-guide/downloads.html" class="c-primary-nav__link ">
+                    <span class="c-primary-nav__text">Downloads</span>
+                    </a>
+                  </li>
+                  <!-- end c-nav__list__item -->
+                  <li class="c-primary-nav__item">
+                    <a href="/style-guide-guide/support.html" class="c-primary-nav__link ">
+                    <span class="c-primary-nav__text">Support</span>
+                    </a>
+                  </li>
+                  <!-- end c-nav__list__item -->
+                  <li class="c-primary-nav__item">
+                    <a href="/style-guide-guide/contribute.html" class="c-primary-nav__link ">
+                    <span class="c-primary-nav__text">Contribute</span>
+                    </a>
+                  </li>
+                  <!-- end c-nav__list__item -->
+                </ul>
+                <!-- end c-nav__list -->
+              </nav>
+              <!-- end c-nav -->
+            </div>
+            <!--end c-header__nav-container-->
+          </div>
+          <!--end c-header__inner-->
+        </header>
+      </div>
+      <!--end c-header-->
+
+      <div class="l-page-layout__main">
+
+        <main role="main">
+  <div class="l-container">
+    <div class="c-page-header">
+      <h1 class="c-page-header__title">Style Guide</h1>
+      <div class="c-page-header__desc">
+        <p>A boilerplate for creating superb style guides</p>
+      </div>
+    </div>
+    <!-- end c-page-header -->
+    <div class="l-linelength-container">
+      <div class="c-text-passage">
+        <p>The homepage of a style guide should provide high-level information around what the design system is, what benefits it provides, who it’s for, and how to get started with it. Like any good index page, it should provide clear navigation to key parts of the website.</p>
+        <div class="u-margin-bottom-double"><a href="/getting-started" class="button c-btn">Get Started</a></div>
+        <h2 id="design-system-benefits">Design System Benefits</h2>
+        <p>Explain how the design system benefits users and the business. For inspiration, check out over 180 examples of design systems at <a href="http://styleguides.io/examples">Styleguides.io</a>.
+          tivizes teams to use the system, and shows components in the wild.
+        </p>
+        <h2 id="contributing-info">Contributing info</h2>
+        <p>If it’s desirable to have people from across the organization contribute to the design system, linking to the <a href="/style-guide-guide/contributing.html">contributing page</a> from the homepage could be a good idea.</p>
+      </div>
+      <!--end c-text-passage-->
+    </div>
+    <!--l-linelength-container-->
+  </div>
+  <!--end l-container-->
+</main>
+        <!--c-footer-->
+        <footer class="c-footer" role="contentinfo">
+          <ul class="c-footer-nav">
+            <li class="c-footer-nav__item">
+              <a href="/style-guide-guide/about.html" class="c-footer-nav__link">About</a>
+            </li>
+            <!--end c-footer-nav__item-->
+            <li class="c-footer-nav__item">
+              <a href="/style-guide-guide/roadmap.html" class="c-footer-nav__link">Roadmap</a>
+            </li>
+            <!--end c-footer-nav__item-->
+            <li class="c-footer-nav__item">
+              <a href="/style-guide-guide/release-history" class="c-footer-nav__link">Release History</a>
+            </li>
+            <!--end c-footer-nav__item-->
+            <li class="c-footer-nav__item">
+              <a href="/style-guide-guide/contribute.html" class="c-footer-nav__link">Contribute</a>
+            </li>
+            <!--end c-footer-nav__item-->
+          </ul>
+          <!--end c-footer-nav-->
+        </footer>
+        <!--end c-footer-->
+        <script src="/build/js/app.min.js" type="text/javascript"></script>
+      </div>
+      <!--end l-page-layout__main-->
+    </div>
+    <!--end l-two-column-fixed-->
+</body>
+</html>
