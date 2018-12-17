@@ -68,6 +68,7 @@ gulp.task('less', function() {
       browsers: ['last 2 version'],
       cascade: false
     }))
+    .pipe(gulp.dest('build/css'))
     .pipe(cleanCSS())
     .pipe(rename('styles.min.css'))
     .pipe(maps.write('./'))

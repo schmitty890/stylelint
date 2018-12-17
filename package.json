@@ -14,6 +14,7 @@
     "lint": "eslint .",
     "watch": "nodemon server.js",
     "styles": "stylelint 'public/assets/less/*/*.less'",
+    "stylesglobal": "stylelint 'build/css/styles.css'",
     "stylefix": "stylelint 'public/assets/less/*/*.less' --fix"
   },
   "dependencies": {

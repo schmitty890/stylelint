@@ -1,4 +1,7 @@
 {
+  "ignoreFiles": [
+    "./public/assets/less/utilities/anyfileyouwanttoskiplinting.less"
+  ],
   "rules": {
     "block-no-empty": true,
     "color-no-invalid-hex": true,
